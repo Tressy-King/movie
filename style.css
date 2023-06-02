@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+body h1{
+    color: red;
+    text-align: center;
+}
+
+div h4{
+    text-align: center;
+}
+
+.main-heading{
+    width: 50%;
+    height: 279px;
+    background-color: rgb(44, 42, 42);
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 1px 0;
+    animation-name: Tressy;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+.main-heading h2{
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+body div{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    margin: auto;
+}
+
+/* @media screen and (max-width:800px) {
+    body{
+        background-color: blue;
+    }
+    .main-heading{
+        background-color:rgb(24, 5, 94);
+    }
+    .images{
+        background-image: url(img/panther\ download.jfif);
+        background-size: cover;
+    }
+    #title{
+        background-color: black;
+        border: none;
+        font-size: larger;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: line-through;
+    }
+} */
+
+.inputs{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-heading h4{
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.inputs2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#submit{
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    padding: 8px 18px;
+    border-radius: 9px;
+    border: none;
+    margin-left: 300px;
+    cursor: pointer;
+    font-family: sans-serif;
+    border: 1px solid black;
+}
+
+#submit:hover{
+    background-color: rgb(206, 40, 40);
+}
+
+.images{
+    background-color:  rgb(44, 42, 42);
+    width: 100%;
+    height: 420px;
+    padding: 10 100px;
+    display: block;
+}
+
+.images h4{
+    text-decoration: none;
+    color: white;
+}
+
+.pic1{
+    height: 300px;
+    width: 25%;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.pic2{
+    height: 300px;
+    width: 25%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.pic3{
+    height: 300px;
+    width: 25%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.loader{
+    position: fixed;
+    top: 0;;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 0.75s, visibility 0.75s;
+    animation-duration: 10s;
+    animation-delay: 10s;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid#dddddd;
+    border-top-color: darkgrey;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    0%{transform: rotate(0turn);}
+    100%{transform: rotate(1turn);}
+}
